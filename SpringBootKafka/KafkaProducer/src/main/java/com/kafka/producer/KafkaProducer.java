@@ -24,7 +24,7 @@ public class KafkaProducer {
     public void sendMessage() throws InterruptedException {
         String topic = "wikimedia_recentchanges";
 
-        EventHandler eventHandler = new KafkaConsumer(topic, kafkaTemplate);
+        EventHandler eventHandler = new KafkaProducerEventHandler(topic, kafkaTemplate);
 
         String source = "https://stream.wikimedia.org/v2/stream/recentchange";
 
