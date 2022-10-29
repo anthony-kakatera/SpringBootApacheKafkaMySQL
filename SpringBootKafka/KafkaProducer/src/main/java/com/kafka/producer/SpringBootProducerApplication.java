@@ -9,5 +9,6 @@ public class SpringBootProducerApplication {
 
     public static void main(String[] args){
         SpringApplication.run(SpringBootProducerApplication.class);
+        
     }
 }
